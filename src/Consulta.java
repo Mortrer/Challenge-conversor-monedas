@@ -10,7 +10,7 @@ public class Consulta {
 //Conexión y consulta en la API para obtener la tasa de cambio
     public static double BusquedaMoneda(String tipoMoneda, String monedaConvertir) {
         try {
-            String keyApi = "1df993c6c3f9740b8fe51cfd";
+            String keyApi = "API KEY";
             final String direccion = "https://v6.exchangerate-api.com/v6/" + keyApi + "/latest/"+ tipoMoneda;
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
